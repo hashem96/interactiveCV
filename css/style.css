@@ -1,0 +1,470 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif
+}
+
+.headerSection {
+  background-image: url(/res/background.jpg);
+  height: 100%;
+  width: 100%;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 15px;
+}
+
+.lineBreak {
+  border-bottom: solid thin white;
+  width: 50%;
+}
+
+#personalNameIntro {
+  text-shadow: 0 0 3px grey;
+}
+
+#introHeader {
+  font-size: 30px;
+}
+
+#downArrow {
+  width: 50px;
+  height: 50px;
+}
+
+.downArrowContainer {
+  margin-top: 50px;
+}
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.profileSection, .abilitiesSection {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+}
+
+.experiencesSection, .projectsSection {
+  background-color: #F3EFE0;
+  width: 100%;
+  height: fit-content;
+}
+
+.contactSection {
+  background-color: #434242;
+  width: 100%;
+  height: 100%;
+}
+
+.topProfileSection, .topExperiencesSection, .topAbilitiesSection, .topProjectsSection, .topContactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profileHeader, #experiencesHeader, #abilitiesHeader, #projectsHeader {
+  color: #51A4A0;
+  font-size: 60px;
+}
+
+#contactHeader {
+  color: white;
+  font-size: 60px;
+}
+
+#aboutHeader, #detailsHeader, #educationHeader, #experienceHeader, #softwareHeader, #languagesHeader {
+  color: #51A4A0;
+  font-size: 30px;
+}
+
+#profileDescription, #experiencesDescription, #abilitiesDescription, #projectsDescription, #contactDescription {
+  color: #A9A9A9;
+  font-size: 20px;
+}
+
+.profileLineBreak, .experiencesLineBreak, .projectsLineBreak {
+  border-bottom: solid thin #D3D3D3;
+  width: 70%;
+  font-size: 30px;
+}
+
+.middleProfileSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "about image details";
+  grid-gap: 0px;
+  margin: auto;
+  height: 100vh;
+  width: 90vw;
+  user-select: none;
+}
+
+.aboutMe {
+  grid-area: about;
+  user-select: none;
+
+  
+}
+
+#personalName, #personalAge, #personalLocation {
+  font-size: 16px;
+  color: black;
+  text-shadow: none;
+}
+
+#greyText {
+  color: grey;
+  text-shadow: none;
+  font-size: 16px;
+}
+
+#presonalImage {
+  grid-area: image;
+  user-select: none;
+  width: 200px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #F3EFE0;
+  margin-left: 120px;
+  margin-top: 20px;
+  Box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.profileDetails {
+  grid-area: details;
+  user-select: none;
+}
+
+#educationHeader, #experienceHeader, #softwareHeader {
+  margin-left: 30px;
+}
+
+.educationFirstInnerSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.experienceFirstInnerSection, .experienceSecondInnerSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.educationSecondInnerSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#locationPin {
+  height: 20px;
+  width: 20px;
+}
+
+.educationLineBreakContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.educationLineBreak, .abilitesLineBreak, .contactLineBreak {
+  border-bottom: solid thin #D3D3D3;
+  width: 70%;
+  font-size: 30px;
+}
+
+#educationFirstEntryInfo, #educationSecondEntryInfo, #experienceFirstEntryInfo, #experienceSecondEntryInfo {
+  width: 50%;
+}
+
+#educationFirstEntry, #educationSecondEntry {
+  width: fit-content;
+}
+
+#star {
+  height: 15px;
+  width: 15px;
+}
+
+.softwareEntry, .languagesEntry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.softwareEntry:hover, .languagesEntry:hover {
+  background-color: #F2F2F2;
+}
+
+#star:hover {
+  transform: scale(1.5);
+}
+
+.abilitesHeaders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allEntries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "software languages";
+  grid-gap: 0px;
+  margin: auto;
+  user-select: none;
+}
+
+.softwareEntries {
+  grid-area: software;
+  user-select: none;
+  width: 80%;
+}
+
+.languagesEntries {
+  grid-area: languages;
+  user-select: none;
+  width: 100%;
+}
+
+.projectsImages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#bumaProject, #zichronProject {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.caption-style-1 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.caption-style-1 li {
+  float: left;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.caption-style-1 li:hover .caption {
+  opacity: 1;
+}
+
+.caption-style-1 img {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+}
+
+.caption-style-1 .caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+.caption-style-1 .blur {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 300px;
+  width: 300px;
+  z-index: 5;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.caption-style-1 .caption-text h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.caption-style-1 .caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  top: 100px;
+}
+
+#githubLogo, #linkedinLogo, #emailLogo {
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+}
+
+.githubContainer, .emailContainer, .linkedinContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+#link {
+  text-decoration: none;
+  color: #A9A9A9;
+  width: 50%;
+}
+
+.githubContainer:hover #link {
+  color: white;
+}
+
+.githubContainer:hover #githubLogo {
+  opacity: 1;
+}
+
+.emailContainer:hover #link {
+  color: white;
+}
+
+.emailContainer:hover #emailLogo {
+  opacity: 1;
+}
+
+.linkedinContainer:hover #link {
+  color: white;
+}
+
+.linkedinContainer:hover #linkedinLogo {
+  opacity: 1;
+}
+
+.sidenav {
+  background-color: #222222;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  height: 30vh;
+  margin-top: 20px;
+  right: 0;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.navlist-right {
+  float: right;
+}
+
+/* styling navlist anchor element */
+
+.sidenav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* hover effect of navlist anchor element */
+
+.sidenav a:hover {
+  background-color: #51A4A0;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+@media only screen and (min-device-width: 320px)  and (max-device-width: 480px)  {
+  .headerSection {
+    height: 50%;
+    width: 100%;
+  }
+
+  .sidenav {
+    height: 13vh;
+  }
+
+  .profileSection, .abilitiesSection {
+    background-color: white;
+    width: 100%;
+    height: 35%;
+  }
+  #presonalImage {
+
+    margin-left: 50px;
+  }
+  .profileDetails {
+
+    margin-left: 50px;
+  }
+}
+
