@@ -7,7 +7,7 @@ html {
 }
 
 .headerSection {
-  background-image: url(../images/background.jpg);
+  background-image: url(./images/background.jpg);
   height: 100%;
   width: 100%;
   opacity: 0.95;
